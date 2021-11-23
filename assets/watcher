@@ -1,0 +1,1 @@
+while inotifywait -r ./src -e create,modify;do { eval "node ./build.js"; }; done
